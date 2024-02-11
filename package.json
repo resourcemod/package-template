@@ -1,0 +1,9 @@
+{
+  "name": "resourcemod-server",
+  "version": "1.0.0",
+  "author": "",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "resourcemod": "^1.0.10"
+  }
+}
