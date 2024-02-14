@@ -1,5 +1,5 @@
 module.exports = {
     plugins: [],
-    entrypoint: "src/server.js",
+    entrypoint: "dist/server.js",
     precache: []
 }

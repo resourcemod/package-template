@@ -3,7 +3,14 @@
   "version": "1.0.0",
   "author": "",
   "license": "GPL-3.0",
+  "scripts": {
+    "build": "tsc"
+  },
   "dependencies": {
     "resourcemod": "^1.0.19"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "typescript": "^5.3.3"
   }
 }
