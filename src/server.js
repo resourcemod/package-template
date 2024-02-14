@@ -1,5 +1,5 @@
 const {events, chat, constants} = require('resourcemod')
 
-events.onClientConnect((event) => {
-    chat.sayToEveryone(`${event.getSteamId()} connected.`, constants.HUD_PRINT_TALK);
+events.onItemPickup((event) => {
+    chat.sayToEveryone(`${event.player.name} just picked up ${event.item}.`, constants.HUD_PRINT_TALK);
 })
