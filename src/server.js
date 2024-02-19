@@ -1,5 +1,9 @@
-const {events, chat, constants} = require('resourcemod')
+const {events, chat} = require('resourcemod')
 
-events.onItemPickup((event) => {
-    chat.sayToEveryone(`${event.player.name} just picked up ${event.item}.`, constants.HUD_PRINT_TALK);
+events.onPlayerChat((event) => {
+    if (event.message.startsWith('!help')) {
+        event.player.say(`${chat.Colors.Blue} Hello!`)
+        event.player.say(`${chat.Colors.Red} Please, read resourcemod docs first:`)
+        event.player.say(`${chat.Colors.DarkRed} https://rmod.dev/`)
+    }
 })
